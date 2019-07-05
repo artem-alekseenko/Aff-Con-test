@@ -1,3 +1,5 @@
+- var menuItems = [{name: 'Programm', url:"#"},{name: 'Our speakers', url:"#"},{name: 'Location', url:"#"},{name: 'Taxes and fees', url:"#"},{name: 'Become a speaker', url:"#"},{name: 'About', url:"#"}]
+
 .sidebar
     .sidebar__title
         .sidebar__title__text
@@ -5,6 +7,7 @@
     .sidebar__menu
         .sidebar__menu__items
             ul
-                each val in ['Programm', 'Our speakers', 'Location', 'Taxes and fees', 'Become a speaker', 'About']
-                    li= val
+                each item in menuItems
+                    li
+                        a(href="#{item.url}") #{item.name}                        
     .sidebar__contact-us Contact us

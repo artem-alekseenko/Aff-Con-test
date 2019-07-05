@@ -5,6 +5,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
+  min-width: 230px;
   
   &__title {
     background-color: #00544e;
@@ -17,7 +18,7 @@
       bottom: 0;
       content: "";
       display: block;
-      height: 50%;
+      height: 90%;
       left: 0;
       position: absolute;
       right: 0;
@@ -58,9 +59,19 @@
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
+            font-size: 1.6rem;
             height: 100%;
-            padding: 4rem;
+            padding: 4rem;  
             
+            & a {
+                text-decoration: none;
+                color: #000;
+
+                &:hover {
+                    color: red;
+                    transition-duration: 0.3s;
+                }
+            }
         }
     }
   }
@@ -69,7 +80,7 @@
       background-color: #330000;
       color: #fff;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
       font-family: $ff-main-bold;
       font-size: 2rem;
   }
