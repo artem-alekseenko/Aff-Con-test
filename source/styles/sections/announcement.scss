@@ -1,0 +1,69 @@
+.announcement {
+  flex: 2 1 500px;
+  background-image: url(../../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__title {
+    &__text {
+      color: #fff;
+      text-align: right;
+      font-family: $ff-main-thin;
+      font-size: 2.5rem;
+      padding-right: 3rem;
+    }
+  }
+
+  &__info {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 0;
+    font-family: $ff-main-thin;
+
+    &__dates {
+      font-size: 3.5rem;
+      padding-bottom: 1rem;
+    }
+
+    &__registration {
+        padding-bottom: 1rem;
+
+      & button {
+        background: #3498db;
+        background-image: linear-gradient(to bottom, #3498db, #2980b9);
+        border-radius: 28px;
+        color: #ffffff;
+        background: #0099ff;
+        border: 0;
+        padding: 1rem 3.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $ff-main-thin;
+
+        &:hover {
+          background: #71c5fa;       
+          background-image: linear-gradient(to bottom, #71c5fa, #137dc4);
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__tax {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    &__learn-more {        
+        font-size: 1rem;
+        padding-bottom: 3rem;
+
+        & a {
+            color: #fff;
+        }
+    }
+  }
+}

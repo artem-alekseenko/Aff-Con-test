@@ -1,4 +1,7 @@
 .content {
     flex: 3 1 75%;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap
 }
