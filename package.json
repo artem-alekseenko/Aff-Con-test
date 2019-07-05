@@ -1,0 +1,39 @@
+{
+  "name": "blank",
+  "version": "1.0.0",
+  "description": "Сlean project blank",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artem-alekseenko/landing-1.git"
+  },
+  "keywords": [
+    "blank"
+  ],
+  "author": " ",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify-es": "^1.0.4",
+    "rimraf": "^2.6.3",
+    "gulp.spritesmith": "^6.10.1"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0",
+    "font-awesome": "^4.7.0"
+  }
+}
