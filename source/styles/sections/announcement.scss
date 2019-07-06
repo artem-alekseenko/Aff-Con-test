@@ -1,6 +1,6 @@
 .announcement {
   flex: 2 1 500px;
-  background-image: url(../../images/background.jpg);
+  background: url(../../images/background.jpg) no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -32,24 +32,7 @@
     &__registration {
         padding-bottom: 1rem;
 
-      & button {
-        background: #3498db;
-        background-image: linear-gradient(to bottom, #3498db, #2980b9);
-        border-radius: 28px;
-        color: #ffffff;
-        background: #0099ff;
-        border: 0;
-        padding: 1rem 3.5rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: $ff-main-thin;
-
-        &:hover {
-          background: #71c5fa;       
-          background-image: linear-gradient(to bottom, #71c5fa, #137dc4);
-          text-decoration: none;
-        }
-      }
+      
     }
 
     &__tax {

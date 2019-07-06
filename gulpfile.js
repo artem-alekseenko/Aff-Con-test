@@ -40,26 +40,27 @@ gulp.task('styles:compile', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(sass({outputStyle: 'compressed'})
-        .on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'compressed' })
+            .on('error', sass.logError))
         .pipe(rename('main.min.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('build/css'));
 });
 
 /* -------- JS  -------- */
-gulp.task('js', function() {
+gulp.task('js', function () {
     return gulp.src([
-       'source/js/init.js'
+        'source/js/owl.carousel.js',
+        'source/js/init.js'
     ])
-    .pipe(sourcemaps.init())
-    .pipe(babel({
-        presets: ['@babel/env']
-    }))
-    .pipe(concat('main.min.js'))
-    .pipe(uglify())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('build/js'));
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(concat('main.min.js'))
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('build/js'));
 });
 
 
