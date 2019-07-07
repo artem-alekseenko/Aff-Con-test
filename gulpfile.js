@@ -51,7 +51,8 @@ gulp.task('styles:compile', function () {
 gulp.task('js', function () {
     return gulp.src([
         'source/js/owl.carousel.js',
-        'source/js/init.js'
+        'source/js/init.js',
+        'source/js/menuToggle.js'
     ])
         .pipe(sourcemaps.init())
         .pipe(babel({

@@ -1,6 +1,11 @@
 .speakers {
   flex: 1 1 100px;
-  
+
+  @media (max-width: 1023px) {
+    .content {
+      max-width: calc(80%);
+    }
+  }
 
   &__title {
     padding: 10px 20px;
@@ -18,15 +23,26 @@
     justify-content: space-between;
 
     &__carousel {
-        flex: 10000 1 800px;
-        max-width: calc(87%);
+      flex: 10000 1 200px;
+      max-width: calc(83%);
+
+      & .owl-nav {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      @media (max-width: 1023px) {
+        & {
+          max-width: calc(100%);
+        }
+      }
     }
 
     &__become-speaker {
       flex: 1 1 100px;
       font-family: $ff-main-bold;
       font-size: 2rem;
-      padding: 0 2rem 0 2rem;
+      padding: 0 2rem 2rem 2rem;
       text-align: center;
 
       & .button {

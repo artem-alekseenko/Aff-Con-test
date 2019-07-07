@@ -1,13 +1,16 @@
 - var menuItems = [{name: 'Programm', url:"#"},{name: 'Our speakers', url:"#"},{name: 'Location', url:"#"},{name: 'Taxes and fees', url:"#"},{name: 'Become a speaker', url:"#"},{name: 'About', url:"#"}]
 
+.menuToggle 
+    img(src="./images/icons/bars.png", alt="Меню").menuToggle__img
 .sidebar
     .sidebar__title
         .sidebar__title__text
             h1 <span class="sidebar__title__text-plus">+</span>Med <br /> Summit<br /> 18.
-    .sidebar__menu
+    nav.sidebar__menu        
         .sidebar__menu__items
             ul
                 each item in menuItems
                     li
                         a(href="#{item.url}") #{item.name}                        
-    .sidebar__contact-us Contact us
+    .sidebar__contact-us 
+        a(href="#") Contact us

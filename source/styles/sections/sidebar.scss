@@ -2,10 +2,20 @@
   flex: 1 1 250px;
   height: 100vh;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   justify-content: space-between;
   min-width: 230px;
-  
+
+  @media (max-width: 1023px) {
+    & {
+      display: none;
+      position: absolute;
+      width: 100%;
+      background-color: white;
+      z-index: 9;
+    }
+  }
+
   &__title {
     background-color: #00544e;
     margin-top: 0;
@@ -31,15 +41,19 @@
       padding-left: 3rem;
       padding-top: 3rem;
       text-transform: uppercase;
-      font-family: $ff-main-bold;      
+      font-family: $ff-main-bold;
+
+      @media (max-width: 1023px) {
+        padding-left: 7rem;
+      }
 
       &-plus {
         font-size: 4.5rem;
       }
 
       & h1 {
-          font-size: 5rem;
-          margin-top: 0;
+        font-size: 5rem;
+        margin-top: 0;
       }
     }
   }
@@ -48,38 +62,64 @@
     flex-grow: 1;
 
     &__items {
-        padding-top: 2rem;
+      padding-top: 2rem;
+      height: 100%;
+
+      & ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 1.6rem;
         height: 100%;
-        
+        padding: 1rem;
 
-        & ul {
-            display: flex;             
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            font-size: 1.6rem;
-            height: 100%;
-            padding: 1rem;  
-            
-            & a {
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                    color: red;
-                    transition-duration: 0.3s;
-                }
-            }
+        @media (max-width: 1023px) {
+          padding: 4rem;
         }
+
+        & li {
+
+          @media (max-width: 1023px) {
+            padding: 1rem 0;
+          }
+        }
+
+        & a {
+          text-decoration: none;
+          color: #000;
+
+          &:hover {
+            color: red;
+            transition-duration: 0.3s;
+          }
+        }
+      }
     }
   }
 
   &__contact-us {
-      background-color: #330000;
+    background-color: #330000;
+
+    @media (max-width: 1023px) {
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    & a {
       color: #fff;
       text-align: center;
       padding: 2rem;
       font-family: $ff-main-bold;
       font-size: 2rem;
+      text-decoration: none;
+      display: inherit;
+
+      &:hover {
+        color: red;
+        transition-duration: 0.3s;
+      }
+    }
   }
 }

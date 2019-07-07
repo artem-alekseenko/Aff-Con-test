@@ -5,24 +5,29 @@ $(document).ready(function () {
         loop: false,
         margin: 0,
         responsiveClass: true,
+        autoplay: true,
+        autoplayTimeout: 3000,       
         responsive: {
             0: {
-                items: 1,
-                nav: true
+                items: 3,
+                nav: false,
+                loop: true                
             },
             600: {
-                items: 2,
-                nav: false
+                items:4,
+                nav: false,
+                loop: true
             },
             800: {
-                items: 4,
-                nav: false
+                items: 5,
+                nav: false,
+                loop: true
             },
-            1000: {
+            1100: {
                 items: 6,
                 nav: false,
-                loop: false
-            }
+                loop: true
+            }                     
         }
     })
 });
