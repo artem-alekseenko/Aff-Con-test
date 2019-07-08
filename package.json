@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/artem-alekseenko/landing-1.git"
+    "url": "git+https://github.com/artem-alekseenko/Aff-Con-test"
   },
   "keywords": [
     "test"
   ],
-  "author": " ",
+  "author": "Artem Alekseenko",
   "license": "ISC",
   "homepage": "",
   "devDependencies": {
