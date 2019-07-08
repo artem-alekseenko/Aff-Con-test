@@ -1,5 +1,5 @@
 # Тестовое задание Affiliate Control
-Сайт размещен на странице <>
+Сайт размещен на странице <https://artem-alekseenko.github.io/affiliate-control-pages/>
 
 ## Используются следующие инструменты и технологии:
 * система контроля версий **github**
