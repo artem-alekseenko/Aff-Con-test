@@ -1,13 +1,12 @@
 .content {
-    flex: 10 2 500px;    
-    display: flex;
-    flex-direction: column;   
-    height: 100vh; 
-    max-width: calc(75%);
+  flex: 10 2 500px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: calc(75%);
 
-    @media (max-width: 1023px) {        
-        max-width: calc(100%); 
-        position: relative;            
-    }    
+  @media (max-width: 1023px) {
+    max-width: calc(100%);
+    position: relative;
+  }
 }
-

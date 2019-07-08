@@ -1,5 +1,3 @@
-window.crutch = {};
-
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         loop: false,
@@ -31,4 +29,3 @@ $(document).ready(function () {
         }
     })
 });
-

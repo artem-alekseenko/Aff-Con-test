@@ -11,40 +11,13 @@
   font-family: $ff-main-thin;
 
   &:hover {
-    background: #71c5fa;       
+    background: #71c5fa;
     background-image: linear-gradient(to bottom, #71c5fa, #137dc4);
     text-decoration: none;
   }
-}
 
-
-.buttonold {
-
-  
-    // display: inline-block;
-    // border-radius: 3px;
-    // padding: 10px 21px 7px 21px;
-    // text-decoration: none;
-    // color: #fff;
-  
-    // &--red {
-    //   background: #de2b24;
-    //   transition: 0.3s;
-  
-    //   &:hover {
-    //     background: lighten(#de2b24, 7%);
-    //   }
-    // }
-  
-    // &--yellow {
-    //   background: #f8cd53;
-  
-    //   &:hover {
-    //     background: lighten(#f8cd53, 7%);
-    //   }
-    // }
-  
-    // &--text-uppercase {
-    //   text-transform: uppercase;
-    // }
+  &:active,
+  &:focus {
+    outline: none;
   }
+}

@@ -1,7 +1,7 @@
 {
-  "name": "blank",
+  "name": "Test",
   "version": "1.0.0",
-  "description": "Сlean project blank",
+  "description": "Affiliate Control Test",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/artem-alekseenko/landing-1.git"
   },
   "keywords": [
-    "blank"
+    "test"
   ],
   "author": " ",
   "license": "ISC",
@@ -33,7 +33,6 @@
     "gulp.spritesmith": "^6.10.1"
   },
   "dependencies": {
-    "normalize.scss": "^0.1.0",
-    "font-awesome": "^4.7.0"
+    "normalize.scss": "^0.1.0"
   }
 }

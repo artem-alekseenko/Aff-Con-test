@@ -26,6 +26,13 @@
       flex: 10000 1 200px;
       max-width: calc(83%);
 
+      & hr {
+        margin: 0.5rem auto 0.5rem 0;
+        width: 4rem;
+        height: 3px;
+        background-color: #006666;
+      }
+
       & .owl-nav {
         font-size: 3rem;
         text-align: center;
